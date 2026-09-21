@@ -1,0 +1,57 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+h1{
+    width: 400px;
+    padding: 20px;
+    margin-left: 0px;
+    align-items: center;
+    text-align: center;
+    margin-top: 2px;
+    
+}
+
+body{
+    background-color: black;
+}
+
+p{
+    color: black;
+}
+
+form{
+    width: 400px;
+    margin: 10px;
+    border: 1px solid white;
+    background-color: aliceblue;
+    padding: 10px;
+    border: 40px;
+    align-items: center;
+    margin-left: 180px;
+    margin-top: 40px;
+}
+
+label{
+    width: 380px;
+    border: 1px solid white;
+    border-radius: 12px;
+    padding: 1px;
+    margin: auto;
+    text-transform: capitalize;
+
+}
+
+input{
+    width: 380px;
+    border-radius: 20px;
+    border: 1px solid white;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+    outline: none;
+}
