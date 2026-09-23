@@ -37,6 +37,11 @@ form{
     background-color: aliceblue;
 }
 
+form:hover{
+    background-color: azure;
+    transition: all 0.2s linear;
+}
+
 label{
     width:400px;
     margin-top: 10px;
@@ -47,7 +52,7 @@ label{
 }
 
 input{
-    width: 350px;
+    width: 200px;
     margin-top: 10px;
     margin: auto;
     margin-bottom: 20px;
@@ -56,15 +61,35 @@ input{
     padding: 15px;
     display: block;
     outline-color: aqua;
+    transition: 0.5s;
+}
+
+input:focus{
+    width: 350px;
+}
+
+input:hover {
+    background-color: antiquewhite;
+    transition: all 0.5s linear;
 }
 
 button{
-    width: 350px;
+     width: 350px;
     text-align: center;
     padding: 5px;
     cursor: pointer;
     background-color: black;
-    text-decoration: double ;
+    text-decoration: double;
     color: white;
     border-radius: 40px;
+}
+
+button:hover{
+    background-color: white;
+    color: black;
+}
+
+button:active{
+    transform: translateY(2px);
+    background-color: brown;
 }

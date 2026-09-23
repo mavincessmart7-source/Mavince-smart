@@ -11,40 +11,72 @@ body{
 form{
     margin: 100px;
     border: 1px solid white;
-    width: 100px;
+    width: 400px;
     text-transform: capitalize;
     align-items: center;
-    margin-left: 330px;
+    margin-left: 200px;
     margin-top: 300px;
     background-color: aliceblue;
     height: max-content;
-    border-radius: 3px
+    border-radius: 10px
 
+}
+
+form:hover{
+    background-color: azure;
+    transition: all 0.5s linear;
 }
 
 label{
-    width: 90px;
+    width: 400px;
     border: 1px solid white;
+    text-transform: capitalize;
     align-items: center;
     text-align: center;
     padding: 0px;
+    margin-left: 10px;
+}
+
+input:hover{
+    background-color: antiquewhite;
+    transition: all 0.5s linear;
+}
+
+input:focus{
+    width: 380px;
 }
 
 input{
-    width: 90px;
+    width: 300px;
     background-color: white;
-    margin-bottom: 10px;
-    margin-top: 2px;
-    padding: 2px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 5px;
     border: 1px solid white;
-    border-radius: 3px;
+    border-radius: 8px;
+    margin-left: 10px;
+    outline: navajowhite;
 }
 
 button{
-    width: 90px;
+    width: 200px;
     cursor: pointer;
     background-color: black;
     color: white;
     border: 1px solid white;
-    border-radius: 2pc;
+    border-radius: 2pC;
+    margin-left: 100px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    background-color: aliceblue;
+    color: black;
+    transition: all 0.5s linear;
+}
+
+button:active{
+    transform: translateY(10px);
+    background-color: brown;
 }
