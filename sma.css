@@ -52,6 +52,11 @@ label{
 
 }
 
+.monopoly:hover{ 
+    background-color: wheat;
+    /* cursor: pointer; */
+}
+
 input{
     width: 200px;
     border-radius: 20px;
@@ -62,9 +67,9 @@ input{
     outline: none;
 }
 
-button:active{
+/* button:active{
     background-color: black;
-}
+} */
 
 input:hover{
     background-color: antiquewhite;
