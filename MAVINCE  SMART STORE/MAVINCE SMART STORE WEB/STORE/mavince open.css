@@ -1,0 +1,147 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.colour{
+    background-color: white;
+    height: 550px;
+    gap: 80px;
+}
+
+p{
+  text-transform: capitalize;
+  margin-top: 10px;
+}
+
+.sma{
+    margin-left: 25px;
+    width: 700px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    text-align: center;
+    border-radius: 50px;
+    border: 1px solid whitesmoke;
+    background-color: skyblue;
+    height: 525px;
+}
+
+.sma img{
+    width: 700px;
+    height: 525px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.OMO {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.smar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(78, 78, 206);
+    border: 1px solid whitesmoke;
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    height: 400px;
+    margin-top: 80px;
+    padding: 50px;
+    padding-top: 5px;
+}
+
+h1 img{
+    background-color: skyblue;
+    margin-top: 40px;
+
+}
+
+.mavince{
+    gap: 10px;
+    margin-top: 41px;
+    text-transform: capitalize;
+    margin-left: 1100px;
+    border: none;
+}
+
+button:active{
+    transform: translateX(5px);
+}
+
+button:hover{
+    background-color: white;
+}
+
+button{
+    padding: 5px;
+    background-color: aliceblue;
+    border: none;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.uou{
+    background-color: blue;
+    color: yellow;
+    cursor: pointer;
+}
+
+.uou :hover{
+    background-color: white;
+    color: black;
+}
+
+.mmmmm{
+    background-color: aliceblue;
+    height: fit-content;
+}
+
+.get{
+    display: block;
+     background-color: white;
+    height: 250px;
+}
+
+.gmb{
+    text-align: center;
+    text-transform: capitalize;
+    margin-left: 650px;
+    margin-bottom: 50px;
+}
+.ooo{
+    text-align: center;
+    align-items: center;
+    margin-left: 67px;
+}
+.displayer h1{
+    margin-top: 10px;
+}
+.displayer{
+    display: flex;
+ padding: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.portos{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.smar h1 span{
+    color: yellow;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mavince Smart Store | Customer Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="mv.html">go back</a>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="brand-mark">M<span>↗</span></div>
+        <div>
+          <strong>MAVINCE</strong>
+          <b>SMART STORE</b>
+          <small>IMPORT&nbsp; | &nbsp;EXPORT</small>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-link active" href="#dashboard" data-section="dashboard"><span>⌂</span> Dashboard</a>
+        <a class="nav-link" href="#products" data-section="products"><span>▣</span> Our Products</a>
+        <a class="nav-link" href="#import" data-section="import"><span>▤</span> Import Services</a>
+        <a class="nav-link" href="#export" data-section="export"><span>✈</span> Export Services</a>
+        <a class="nav-link" href="#orders" data-section="orders"><span>🛒</span> Orders</a>
+        <a class="nav-link" href="#tracking" data-section="tracking"><span>⌁</span> Track Shipment</a>
+        <a class="nav-link" href="#messages" data-section="messages"><span>▰</span> Messages 
+        <a class="nav-link" href="#settings" data-section="settings"><span>⚙</span> Account Settings</a>
+        <a class="nav-link" href="#support" data-section="support"><span>?</span> Help & Support</a>
+      </nav>
+
+      <a class="nav-link logout" href="#" id="logoutBtn"><span>↪</span> Logout</a>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
+        <div class="mobile-brand">MAVINCE <span>SMART STORE</span></div>
+        <div class="search">
+          <input id="searchInput" type="search" placeholder="Search for products, categories or tracking...">
+          <button id="searchBtn" aria-label="Search">⌕</button>
+        </div>
+        <div class="top-actions">
+          <button class="icon-btn" title="Notifications" id="notificationBtn">♧</button>
+          <button class="profile" id="profileBtn">
+            <span class="avatar">●</span>
+            <span><b>Hello, Mavince</b><small>Customer</small></span>
+            <!-- <span>⌄</span> -->
+          </button>
+        </div>
+      </header>
+
+      <div class="content">
+        <section id="dashboard" class="page-section">
+          <section class="hero">
+            <!-- <div class="hero-art ship"></div> -->
+            <div class="hero-copy">
+              <p class="eyebrow">WELCOME TO</p>
+              <h1>MAVINCE SMART STORE</h1>
+              <h2>Your Trusted Import & Export Partner</h2>
+              <p>Quality products <span>•</span> Global reach <span>•</span> Reliable delivery</p>
+              <button class="primary" onclick="scrollToSection('services')">Explore Our Services →</button>
+            </div>
+            <!-- <div class="hero-art plane"></div>
+            <div class="hero-art truck"></div> -->
+          </section>
+
+          <section class="stats">
+            <article class="stat-card"><div class="round blue">◇</div><span>Total Orders</span><strong>0</strong><a href="#orders">View all orders →</a></article>
+            <article class="stat-card"><div class="round cyan">▤</div><span>Active Shipments</span><strong>0</strong><a href="#tracking">Track shipment →</a></article>
+            <article class="stat-card"><div class="round navy">♧</div><span>Total Purchases</span><strong>0</strong><a href="#products">View products →</a></article>
+            <article class="stat-card"><div class="round green">✓</div><span>Account Status</span><strong class="green-text">Active</strong><a href="#settings">Manage account →</a></article>
+          </section>
+
+          <section class="quick">
+            <h2>Quick Actions</h2>
+            <div class="quick-grid">
+              <button class="quick-card" onclick="scrollToSection('products')"><span>◇</span><b>Browse Products</b><small>View our wide range<br>of quality products</small>→</button>
+              <button class="quick-card" onclick="scrollToSection('orders')"><span>🛒</span><b>Place Order</b><small>Start a new order<br>in seconds</small>→</button>
+              <button class="quick-card" onclick="scrollToSection('tracking')"><span>⌖</span><b>Track Shipment</b><small>Check your order<br>status</small>→</button>
+              <button class="quick-card" onclick="scrollToSection('support')"><span>♧</span><b>Contact Support</b><small>Get help when<br>you need it</small>→</button>
+            </div>
+          </section>
+
+          <section class="services" id="services">
+            <div class="section-heading"><h2>Our Import & Export Services</h2><a href="#import">View all services →</a></div>
+            <div class="service-grid">
+              <article class="service-card import"><div><span class="service-icon">◎</span><h3>IMPORT</h3><p>We import quality products<br>from trusted suppliers<br>worldwide.</p><button onclick="showToast('Import services selected')">Learn More →</button></div><div class="service-art"></div></article>
+              <article class="service-card export"><div><span class="service-icon">✈</span><h3>EXPORT</h3><p>We export quality products<br>to customers and businesses<br>around the world.</p><button onclick="showToast('Export services selected')">Learn More →</button></div><div class="service-art"></div></article>
+            </div>
+          </section>
+
+          <section class="categories">
+            <div class="section-heading"><h2>Shop by Category</h2><a href="#products">View all categories →</a></div>
+            <div class="category-grid">
+              <button onclick="filterCategory('Electronics')"><span>💻</span><b>Electronics</b></button>
+              <button onclick="filterCategory('Fashion')"><span>👕</span><b>Fashion</b></button>
+              <button onclick="filterCategory('Home & Living')"><span>🛋</span><b>Home & Living</b></button>
+              <button onclick="filterCategory('Beauty & Health')"><span>🧴</span><b>Beauty & Health</b></button>
+              <button onclick="filterCategory('Automotive')"><span>🚙</span><b>Automotive</b></button>
+              <button onclick="filterCategory('All')"><span>▦</span><b>More Categories</b></button>
+            </div>
+          </section>
+
+          <section class="lower-grid">
+            <article class="activity">
+              <div class="section-heading"><h2>Recent Activity</h2><a href="#orders">View all →</a></div>
+              <div class="activity-row"><i class="success">✓</i><div><b>Order #MS00123</b><p>Your order has been confirmed.</p></div><small>2 hours ago</small></div>
+              <div class="activity-row"><i class="info">⌁</i><div><b>Shipment Update</b><p>Your package is in transit.</p></div><small>5 hours ago</small></div>
+              <div class="activity-row"><i class="purple">▰</i><div><b>Message from Support</b><p>We're here to help you anytime.</p></div><small>1 day ago</small></div>
+              <div class="activity-row"><i class="info">●</i><div><b>Welcome to Mavince Smart Store</b><p>Thanks for creating your account!</p></div><small>1 day ago</small></div>
+            </article>
+            <article class="promo">
+              <small>Ⓜ MAVINCE SMART STORE</small>
+              <h2>Quality Products<br>Global Reach</h2>
+              <p>We connect you to the best products from around the world. Whether you want to import or export, we've got you covered.</p>
+              <button onclick="showToast('More information coming soon')">Learn More →</button>
+              <div class="promo-features"><span>♢<b>Secure<br>Transactions</b></span><span>▣<b>Fast<br>Shipping</b></span><span>♙<b>Customer<br>Satisfaction</b></span></div>
+            </article>
+          </section>
+        </section>
+
+        <section id="products" class="page-section simple-page"><h1>Our Products</h1><p>Browse quality products available through Mavince Smart Store.</p><div class="product-list"><article>💻<b>Electronics</b><span>Quality electronics from trusted suppliers.</span></article><article>👕<b>Fashion</b><span>Fashion products for different needs.</span></article><article>🛋<b>Home & Living</b><span>Products for your home and lifestyle.</span></article></div></section>
+        <section id="import" class="page-section simple-page"><h1>Import Services</h1><p>We import quality products from trusted suppliers worldwide and coordinate reliable delivery.</p></section>
+        <section id="export" class="page-section simple-page"><h1>Export Services</h1><p>We export quality products to customers and businesses around the world.</p></section>
+        <section id="orders" class="page-section simple-page"><h1>Orders</h1><p>Your orders will appear here.</p><button class="primary" onclick="showToast('New order started')">Place New Order</button></section>
+        <section id="tracking" class="page-section simple-page"><h1>Track Shipment</h1><p>Enter a tracking number to check shipment status.</p><div class="track-box"><input id="trackingInput" placeholder="Enter tracking number"><button class="primary" onclick="trackShipment()">Track</button></div></section>
+        <section id="messages" class="page-section simple-page"><h1>Messages</h1><p>You have 2 unread messages from support.</p></section>
+        <section id="settings" class="page-section simple-page"><h1>Account Settings</h1><p>Manage your account details and preferences.</p></section>
+        <section id="support" class="page-section simple-page"><h1>Help & Support</h1><p>Need help? Contact Mavince Smart Store support.</p><button class="primary" onclick="showToast('Support request opened')">Contact Support</button></section>
+      </div>
+
+      <footer>
+        <div class="footer-brand">M<span>↗</span> MAVINCE <small>SMART STORE<br>IMPORT | EXPORT</small></div>
+        <div>Home &nbsp; | &nbsp; Shop &nbsp; | &nbsp; Import & Export &nbsp; | &nbsp; About Us &nbsp; | &nbsp; Contact</div>
+        <div>© 2025 Mavince Smart Store. All rights reserved.</div>
+      </footer>
+    </main>
+  </div>
+  <div id="toast" class="toast"></div>
+  <script src="script.js"></script>
+</body>
+</html>

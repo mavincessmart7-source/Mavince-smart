@@ -1,0 +1,130 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+}
+.ma{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+article{
+    margin-right: 1200px;
+    margin-top: 10px;
+}
+body{
+    background-color: rgb(20, 20, 136);
+     /* background:linear-gradient(to right, white, gray,) url(img\ 5.jpg); */
+}
+
+form{
+    margin: 100px;
+    border: 1px solid none;
+    width: 400px;
+    text-transform: capitalize;
+    align-items: center;
+    margin-left: 600px;
+    background-color:   rgb(9, 9, 94);
+    color: white;
+    height: 400px;
+    margin-top: 00px;
+    border-radius: 10px;
+}
+form img{
+    border: 1px solid none;
+    border-radius: 10pc;
+    margin-left: 175px;
+    display: block;
+}
+form:hover{
+    background-color: skyblue;
+    transition: all 0.5s linear;
+}
+aside{
+    margin-top: 51px;
+    display: flex;
+    justify-content: space-around;
+}
+ aside a{
+    text-transform: capitalize;
+    color: white;
+}
+label{
+    width: 400px;
+    border: 1px solid none;
+    text-transform: capitalize;
+    align-items: center;
+    text-align: center;
+    padding: 0px;
+    margin-left: 10px;
+}
+
+input:hover{
+    background-color: burlywood;
+    transition:all 0.5s linear;
+}
+
+input:focus{
+    width: 380px;
+}
+
+input{
+    width: 300px;
+    background-color: white;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-left: 10px;
+    outline: navajowhite;
+}
+
+button{
+    width: 200px;
+    cursor: pointer;
+    background-color: rgb(8, 8, 121);
+    color: white;
+    border: 1px solid white;
+    border-radius: 2pC;
+    margin-top: 50px;
+    margin-left: 100px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button:hover{
+    background-color: aliceblue;
+    color: black;
+    transition: all 0.5s linear;
+}
+
+button:active{
+    transform: translateY(10px);
+    background-color: brown;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(11, 11, 71);
+    color: white;
+}
+.Left{
+    margin-right: 1000px;
+    margin-top: 15px;
+}
+.right{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+    margin-right: 50px;
+}
